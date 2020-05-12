@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;jso_0406_03&apos; to &apos;jsp_0407_03&apos;" description="Rename resource &apos;jso_0406_03&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/jso_0406_03" name="jsp_0407_03" stamp="1586238149661" updateReferences="true"/>
+</session>

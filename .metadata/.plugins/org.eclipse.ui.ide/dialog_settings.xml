@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="CleanDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="710"/>
+		<item key="DIALOG_Y_ORIGIN" value="262"/>
+		<item key="DIALOG_WIDTH" value="500"/>
+		<item key="DIALOG_HEIGHT" value="388"/>
+		<item key="TOGGLE_SELECTED" value="false"/>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\workspace_spring\c_shop_20200511"/>
+			<item value="D:\workspace_jsp\c_shop_20200511"/>
+			<item value="D:\workspace_jsp\c_shop_20200508"/>
+			<item value="D:\workspace_jsp\jsp_0506_01_fileupload_exercise"/>
+			<item value="D:\workspace_jsp\jsp_0428_02"/>
+			<item value="D:\workspace_jsp\jsp_0427_03"/>
+			<item value="D:\workspace_jsp\team2_modify"/>
+			<item value="D:\workspace_jsp\jsp_0421_03"/>
+			<item value="D:\workspace_jsp\jsp_0414"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+</section>

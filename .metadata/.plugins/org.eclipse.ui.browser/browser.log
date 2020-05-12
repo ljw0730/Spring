@@ -1,0 +1,66 @@
+
+4월 07, 2020 13:08:10.47 NEW SESSION
+4월 07, 2020 13:08:10.47 
+4월 07, 2020 13:08:10.47 KLIB_SelfTest return : KLR_OK
+4월 07, 2020 13:09:30.68 
+4월 07, 2020 13:09:30.68 KLIB_SelfTest return : KLR_OK
+4월 07, 2020 13:10:16.13 
+4월 07, 2020 13:10:16.13 KLIB_SelfTest return : KLR_OK
+
+4월 07, 2020 16:26:59.91 NEW SESSION
+4월 07, 2020 16:26:59.91 
+4월 07, 2020 16:26:59.91 KLIB_SelfTest return : KLR_OK
+4월 07, 2020 16:28:05.01 
+4월 07, 2020 16:28:05.01 KLIB_SelfTest return : KLR_OK
+4월 07, 2020 16:28:58.92 
+4월 07, 2020 16:28:58.92 KLIB_SelfTest return : KLR_OK
+4월 07, 2020 16:30:03.40 
+4월 07, 2020 16:30:03.40 KLIB_SelfTest return : KLR_OK
+4월 07, 2020 16:30:28.47 
+4월 07, 2020 16:30:28.47 KLIB_SelfTest return : KLR_OK
+4월 07, 2020 16:31:14.10 
+4월 07, 2020 16:31:14.10 KLIB_SelfTest return : KLR_OK
+4월 07, 2020 16:31:37.61 
+4월 07, 2020 16:31:37.61 KLIB_SelfTest return : KLR_OK
+4월 07, 2020 19:00:40.04 
+4월 07, 2020 19:00:40.04 KLIB_SelfTest return : KLR_OK
+
+4월 21, 2020 10:13:04.74 NEW SESSION
+4월 21, 2020 10:13:04.74 [3044:4852:0421/101304.740:ERROR:component_installer.cc(321)] Failed to read manifest or verify installation for Safety Tips (C:\Users\user.user-PC\AppData\Local\Google\Chrome\User Data\SafetyTips\763).: 지정된 파일을 찾을 수 없습니다. (0x2)
+
+4월 29, 2020 16:27:19.43 NEW SESSION
+4월 29, 2020 16:27:19.43 [8236:8196:0429/162719.429:ERROR:browser_switcher_service.cc(238)] XXX Init()
+4월 29, 2020 16:30:15.17 [4588:488:0429/163015.175:ERROR:browser_switcher_service.cc(238)] XXX Init()
+
+5월 04, 2020 10:32:24.23 NEW SESSION
+5월 04, 2020 10:32:24.23 [848:2632:0504/103224.229:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 10:32:35.82 [7736:7216:0504/103235.821:ERROR:component_installer.cc(321)] Failed to read manifest or verify installation for CRLSet (C:\Users\user.user-PC\AppData\Local\Google\Chrome\User Data\CertificateRevocation\5840).: 지정된 파일을 찾을 수 없습니다. (0x2)
+5월 04, 2020 10:32:35.89 [7736:3304:0504/103235.899:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 10:36:35.26 [6968:7040:0504/103635.265:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 10:39:04.00 [6252:7412:0504/103904.008:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 10:41:14.69 [7320:7004:0504/104114.696:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 10:42:55.90 [3344:6252:0504/104255.909:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 10:44:32.18 [7888:5580:0504/104432.187:ERROR:browser_switcher_service.cc(238)] XXX Init()
+
+5월 04, 2020 10:56:09.28 NEW SESSION
+5월 04, 2020 10:56:09.28 [1336:1044:0504/105609.278:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 10:57:31.48 [2524:2224:0504/105731.482:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 11:09:24.53 [1704:3964:0504/110924.534:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 11:10:55.62 [8052:6172:0504/111055.628:ERROR:browser_switcher_service.cc(238)] XXX Init()
+
+5월 04, 2020 15:32:12.23 NEW SESSION
+5월 04, 2020 15:32:12.23 [6328:736:0504/153212.235:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 15:33:33.13 [7492:9668:0504/153333.136:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 15:36:50.68 [7948:9400:0504/153650.680:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 16:42:49.25 [8968:8152:0504/164249.257:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 16:44:10.25 [8168:8644:0504/164410.254:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 16:46:02.71 [3564:4372:0504/164602.714:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 16:46:46.95 [2192:3220:0504/164646.959:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 16:49:30.57 [7632:5544:0504/164930.574:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 17:27:44.65 [4244:6464:0504/172744.650:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 17:28:31.83 [3116:8876:0504/172831.839:ERROR:browser_switcher_service.cc(238)] XXX Init()
+
+5월 11, 2020 13:26:19.61 NEW SESSION
+5월 11, 2020 13:26:19.61 [8068:312:0511/132619.610:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 11, 2020 13:26:27.76 [8288:8292:0511/132627.766:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 11, 2020 13:37:42.91 [7568:6128:0511/133742.915:ERROR:browser_switcher_service.cc(238)] XXX Init()
