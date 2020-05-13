@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="pencil" class="com.javalec.ex.Pencil6B"/>
+	<!-- 인터페이스를 사용하고 있기 때문에 만약 4B말고 6B를 사용하고 싶다면 맨끝에 6B만 바꾸면된다. -->
+	<!--  -->
+	
+	
+	
+	<!-- 
+	<bean id="pencil4B" class="com.javalec.ex.Pencil4B" />
+	<bean id="pencil6B" class="com.javalec.ex.Pencil6B" />
+	<bean id="pencil6BEraser" class="com.javalec.ex.Pencil6BEraser" />
+	 -->
+	
+</beans>
