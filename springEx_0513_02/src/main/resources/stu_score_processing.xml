@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="score_process" class="com.javalec.ex.Score_process" />
+	
+	<bean id="stu_score" class="com.javalec.ex.Stu_score">
+		<property name="stu_num" value="1" />
+		<property name="stu_name" value="홍길동" />
+		<property name="kor" value="100" />
+		<property name="eng" value="95" />
+		<property name="math" value="94" />
+		<property name="total" value="289" />
+		<property name="avg" value="96.3" />
+		
+		<property name="score_process">
+			<ref bean="score_process" />
+		</property>	
+	
+	</bean>
+	
+
+</beans>
