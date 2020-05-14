@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<!-- java 파일(CTX 파일)을 사용할수 있게끔 해줌 -->
+	<context:annotation-config/>
+	<bean class="com.javalec.ex.ConfigCTX" />
+
+
+	<bean id="student2" class="com.javalec.ex.Student" >
+		<constructor-arg name="name" value="김유신"/>
+		<constructor-arg name="age" value="33" />
+		<constructor-arg name="hobbys">
+			<list>
+				<value>수영</value>
+				<value>조깅</value>
+				<value>등산</value>
+			</list>
+		</constructor-arg>
+	
+		<property name="height" value="175" />
+		<property name="weight" value="78" />
+	
+	</bean>
+
+
+</beans>
