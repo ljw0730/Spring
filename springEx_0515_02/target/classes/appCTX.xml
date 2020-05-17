@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="member1" class="com.javalec.ex.Member" >
+		<constructor-arg value="1001" />
+		<constructor-arg value="홍길동" />
+		<constructor-arg value="30" />
+		<constructor-arg value="남성" />
+		<constructor-arg value="010-1111-1111" />
+		<constructor-arg value="서울특별시" />
+		<constructor-arg value="19년도 심부전증" />
+	</bean>
+
+	<bean id="member2" class="com.javalec.ex.Member" >
+		<constructor-arg value="1002" />
+		<constructor-arg value="김유신" />
+		<constructor-arg value="33" />
+		<constructor-arg value="남성"/>
+		<constructor-arg value="010-2222-2222" />
+		<constructor-arg value="경기도 수원시" />
+		<constructor-arg value="없음" />
+	</bean>
+	
+	<bean id="member3" class="com.javalec.ex.Member" >
+		<constructor-arg value="1003" />
+		<constructor-arg value="유관순" />
+		<constructor-arg value="18" />
+		<constructor-arg value="여성" />
+		<constructor-arg value="010-3333-3333" />
+		<constructor-arg value="충남 공주" />
+		<constructor-arg value="13년도 백혈병" />
+	</bean>
+
+	<bean id="medical_record1" class="com.javalec.ex.Medical_record">
+		<constructor-arg value="1001" />
+		<constructor-arg value="2020-05-01" />
+		<constructor-arg value="강동원" />
+		<constructor-arg value="다현" />
+		<constructor-arg value="감기" />
+		<constructor-arg value="2020-05-04"/>
+	
+	</bean>
+
+	<bean id="medical_record2" class="com.javalec.ex.Medical_record">
+		<constructor-arg value="1002" />
+		<constructor-arg value="2020-05-10" />
+		<constructor-arg value="김선구" />
+		<constructor-arg value="정연" />
+		<constructor-arg value="골절" />
+		<constructor-arg value="2020-05-11"/>
+	
+	</bean>
+
+	<bean id="medical_record3" class="com.javalec.ex.Medical_record">
+		<constructor-arg value="1003" />
+		<constructor-arg value="2020-04-28" />
+		<constructor-arg value="다니엘" />
+		<constructor-arg value="아이유" />
+		<constructor-arg value="당뇨" />
+		<constructor-arg value="2020-05-28"/>
+	
+	</bean>
+	
+	<bean id="member_all" class="com.javalec.ex.Member_all">
+		<property name="list">
+			<list>
+				<ref bean="member1" />
+				<ref bean="member2" />
+				<ref bean="member3" />
+			</list>
+		</property>
+	</bean>
+	
+	
+</beans>
