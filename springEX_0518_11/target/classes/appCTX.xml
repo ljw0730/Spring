@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+	<bean id="logAOP" class="com.javalec.ex.LogAOP" />
+	
+	<!-- Proxy(대행) 설정 -->
+	<aop:config>
+		<!-- 여기가 공통기능리아고 선언 -->
+		<aop:aspect id="logger" ref="logAOP">
+			<!-- 어느 범위까지 pointcut을 할것인가? (com.javalec.ex.* - ex 안에 있는 모든클래스 적용한다)-->
+			<aop:pointcut id="publicM" expression="within(com.javalec.ex.*)" />
+			<aop:around pointcut-ref="publicM" method="loggerAOP"/>
+		</aop:aspect>
+	</aop:config>
+	
+	<bean id="studentInfo" class="com.javalec.ex.StudentInfo">
+		<property name="stu_num" value="1001" />
+		<property name="name" value="홍길동" />
+		<property name="major" value="국문과" />
+		<property name="address" value="서울특별시" />
+		<property name="phone" value="010-1111-1111" />
+	</bean>
+	
+	<bean id="studentScore" class="com.javalec.ex.StudentScore">
+		<constructor-arg value="1001" />
+		<constructor-arg value="100" />
+		<constructor-arg value="95" />
+		<constructor-arg value="94" />
+	</bean>
+	
+	<bean id="bookLoan" class="com.javalec.ex.BookLoan" >
+		<property name="stu_num" value="1001" />
+		<property name="book_num" value="b001" />
+		<property name="book_title" value="이번 달은 뉴욕커" />
+		<property name="categoriztion" value="에세이" />
+		<property name="loan_date" value="2020-05-01" />
+		<property name="return_date" value ="2020-05-15" />
+		<property name="overdue_date" value="3" />
+	</bean>
+	
+</beans>
