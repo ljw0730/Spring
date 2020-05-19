@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+	
+	<bean id="logAOP" class="com.javalec.ex.LogAOP" />
+
+	<!-- Proxy(대행) 설정 -->	
+	<aop:config>
+		<!-- 여기가 공통기능이라고 선언한다. -->
+		<aop:aspect id="logger" ref="logAOP">
+			<!-- 어느 범위 까지 pointcut을 할것인가? (com.javalec.ex.* - ex 안에 있는 모든클래스 적용한다) -->
+			<aop:pointcut id="publicM" expression="within(com.javalec.ex.*)"/>
+			<aop:around pointcut-ref="publicM" method="loggerAOP"/>
+		</aop:aspect>
+	</aop:config>
+	
+	<bean id="student" class="com.javalec.ex.Student" >
+		<property name="name" value="홍길동" />
+		<property name="age" value="20" />
+		<property name="gradeNum" value="1" />
+		<property name="classNum" value="1" />
+	
+	</bean>
+	
+	<bean id="worker" class="com.javalec.ex.Worker">
+		<property name="name" value="김유신" />
+		<property name="age" value="30" />
+		<property name="job" value="프로그래머" />
+	
+	</bean>
+
+
+</beans>
