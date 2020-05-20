@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+	
+	<aop:aspectj-autoproxy/>
+	<bean id="logAOP" class="com.javalec.ex.LogAOP"/>
+
+	<bean id="book" class="com.javalec.ex.Book">
+		<property name="b_num" value="1001"/>
+		<property name="b_name" value="이번달은 뉴욕커"/>
+		<property name="b_classification" value="비소설"/>
+		<property name="b_writer" value="홍세림"/>
+	</bean>
+	
+	<bean id="rental" class="com.javalec.ex.Rental">
+		<property name="m_num" value="2001"/>
+		<property name="m_name" value="홍길동"/>
+		<property name="r_bookName" value="이번달은 뉴욕커"/>
+		<property name="r_return" value="미납"/>
+		<property name="m_tel" value="010-1111-1111"/>
+	</bean>
+
+</beans>
+
