@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+	<bean id="logAOP" class="com.javalec.ex.LogAOP" />
+	
+	<!-- AOP XML 선언 -->
+	<aop:config>
+		<aop:aspect id="aspLog1" ref="logAOP">
+			<aop:pointcut id="AOPExAll" expression="within(com.javalec.ex.NoticeBoard)" />
+			<aop:around pointcut-ref="AOPExAll" method="loggerAOP"/>
+		</aop:aspect>
+		
+		<aop:aspect id="aspLog2" ref="logAOP">
+			<aop:pointcut id="AOPExBefor" expression="within(com.javalec.ex.Join)" />
+			<aop:before pointcut-ref="AOPExBefor" method="beforeAdviece"/>
+		</aop:aspect>
+		
+		<aop:aspect id="aspLog3" ref="logAOP">
+			<aop:pointcut id="AOPExAfter" expression="within(com.javalec.ex.EventBoard)" />
+			<aop:after pointcut-ref="AOPExAfter" method="afterAdviece"/>
+		
+		</aop:aspect>
+	</aop:config>
+	
+	<bean id="noticeBoard" class="com.javalec.ex.NoticeBoard">
+		<property name="n_num" value="1001" />
+		<property name="n_title" value="공지사항 테스트" />
+		<property name="n_content" value="공지사항 테스트 내용" />
+		<property name="n_date" value="2020-05-19" />
+		<property name="n_writer" value="홍길동" />
+	
+	</bean>
+	
+	<bean id="eventBoard" class="com.javalec.ex.EventBoard">
+		<property name="e_num" value="2001" />
+		<property name="e_tatle" value="이벤트 테스트" />
+		<property name="e_start_date" value="2020-05-14" />
+		<property name="e_end_date" value="2020-05-21" />
+		
+	</bean>	
+
+	<bean id="join" class="com.javalec.ex.Join" >
+		<property name="j_num" value="3001"/>
+		<property name="j_id" value="aaa"/>
+		<property name="j_pw" value="1234"/>
+		<property name="j_name" value="김유신"/>
+		<property name="j_date" value="2020-05-01"/>
+	</bean>
+
+
+</beans>
