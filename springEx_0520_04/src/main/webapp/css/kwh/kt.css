@@ -1,0 +1,202 @@
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 14px;
+  background: white;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid silver;
+}
+
+/* SelectBox Table */
+#selectBox {
+  width: 745px;
+  line-height: 48px;
+  color: white;
+}
+
+#place,
+#date {
+  background: #f4f4f4 !important;
+  color: black;
+}
+
+#selectBox li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#place label,
+#date label {
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+#selectBox span.li-image {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+
+  background: url(http://roaming.kt.com/rental/_ui/images/common/img_sprite.png) no-repeat -105px -5px;
+  margin-right: 10px;
+}
+
+#selectBox select {
+  width: 130px;
+  height: 22px;
+}
+
+#selectBox th,
+#selectBox td {
+  font-size: 12px;
+}
+
+#selectBox th {
+  background: #2c2b2b;
+}
+
+#selectBox td {
+  background: #585858;
+}
+
+#selectBox input {
+  position: relative;
+  top: 3px;
+}
+
+.product-wrapper {
+  display: inline-block;
+  width: 160px;
+  padding-left: 5px;
+}
+
+#orderArea {
+  background: white !important;
+}
+
+#input-return-date {
+  visibility: hidden;
+}
+
+.date {
+  width: 110px;
+  height: 20px;
+
+  background: url(https://roaming.kt.com/rental/_ui/images/datepicker/icn_datepicker.gif) no-repeat;
+  background-position: 95px;
+  background-color: white;
+
+  padding: 1px 0 0 10px;
+  border: 1px solid black;
+  outline: none;
+
+  font-weight: bold;
+  color: #393939;
+}
+
+/* OrderBox Table */
+#orderBox {
+  width: 670px;
+  line-height: 20px;
+  margin: 40px auto 40px auto;
+
+  color: black;
+  border-collapse: collapse;
+}
+
+#orderBox .header,
+#orderBox .order-amount-1,
+#orderBox .order-amount-2,
+#orderBox .order-amount-3 {
+  font-weight: bold;
+}
+
+#orderBox th,
+#orderBox td {
+  border: 1px solid #c9c9c9;
+}
+
+#orderBox th {
+  background: #d7d7db;
+  border-top: 3px solid #c9c9c9;
+  border-bottom: 3px solid #c9c9c9;
+  padding: 14px 8px 14px 8px;
+}
+
+#orderBox td {
+  background: white;
+  padding: 14px 4px 14px 4px;
+}
+
+#orderBox th:first-child,
+#orderBox td:first-child {
+  border-left: hidden;
+}
+
+#orderBox th:last-child,
+#orderBox td:last-child {
+  border-right: hidden;
+}
+
+.order-amount-1 > td,
+.order-amount-2 > td {
+  background: #ededf0 !important;
+}
+
+.order-amount-1 > td {
+  background: #ededf0 !important;
+  border-top: 3px solid #c9c9c9 !important;
+}
+
+.order-amount-3 > td {
+  background: #fee2e4 !important;
+  border-top: 3px solid #c9c9c9 !important;
+  border-bottom: 3px solid #c9c9c9 !important;
+}
+
+.red {
+  color: red;
+}
+
+.price,
+.product-amount,
+.day-price {
+  text-align: right;
+  color: #767676;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.none-period {
+  text-align: center;
+}
+
+.num-select {
+  width: 50px !important;
+}
+
+.float-right {
+  float: right;
+  margin-right: 50px;
+}
+
+.close-button {
+  position: relative;
+  top: 4px;
+  left: 13px;
+
+  width: 20px;
+  height: 20px;
+
+  background: url(https://roaming.kt.com/rental/_ui/images/common/btn_close.gif) no-repeat;
+
+  outline: none;
+  border: none;
+}
